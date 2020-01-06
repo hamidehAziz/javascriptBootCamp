@@ -38,16 +38,17 @@ module.exports = steps;
 
 
 // function steps(n) {
-//     for (let i = 0; i < n; i++){
-//         let step = '';
-//         for (let j = 0; j < n; j++){
-//             if (j <= i){
-//                 step += '#';
-//             } else {
-//                 step += ' ';
+//     for ( let row = 0; row < n; row ++){
+//         let step = "";
+
+//         for ( let col = 0; col < n; col ++){
+//             if (col <= row){
+//                 step += "#";cd 
+//             }else{ 
+//                 step += " ";
 //             }
 //         }
-//         console.log(step);
+//         console.log(step);    
 //     }
-   
+// }
 // }
