@@ -43,7 +43,7 @@ module.exports = steps;
 
 //         for ( let col = 0; col < n; col ++){
 //             if (col <= row){
-//                 step += "#";cd 
+//                 step += "#";
 //             }else{ 
 //                 step += " ";
 //             }
