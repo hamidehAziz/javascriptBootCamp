@@ -10,45 +10,46 @@
 
 function anagrams(stringA, stringB) {
 
-return cleanStr(stringA) === cleanStr(stringB);
-
-}
-
-function cleanStr(str){
-
-   return str.replace(/[^\w]/g,'').toLowerCase().split('').sort().join('');
-}
-
-module.exports = anagrams;
-
-
-// solution 1 
-// function anagrams(stringA, stringB) {
-
-//     let charMapA = charMapCreator(stringA);
-//     let charMapB = charMapCreator(stringB);
-
-//     if (Object.keys(charMapA).length != Object.keys(charMapB).length) // compare # of keys
-//          return false;
-
-//     for( let char in charMapA){
-//         if (charMapA[char] !== charMapB[char]){
-//             return false;
-//         }
-//     }
-//     return true;
-// }
-    
-
-// function charMapCreator(str){
-//     let charMap = {};
-//     for (let char of str.replace(/[^\w]/g,'').toLowerCase()){
-//         if (charMap[char]){
-//             charMap[char]++;
-//          } else {
-//              charMap[char] = 1;
-//          }
-//     }
-
-//     return charMap;
-// }
+   return cleanStr(stringA) === cleanStr(stringB);
+   
+   }
+   
+   function cleanStr(str){
+   
+      return str.replace(/[^\w]/g,'').toLowerCase().split('').sort().join('');
+   }
+   
+   
+   module.exports = anagrams;
+   
+   
+   // solution 1 
+   // function anagrams(stringA, stringB) {
+   
+   //     let charMapA = charMapCreator(stringA);
+   //     let charMapB = charMapCreator(stringB);
+   
+   //     if (Object.keys(charMapA).length != Object.keys(charMapB).length) // compare # of keys
+   //          return false;
+   
+   //     for( let char in charMapA){
+   //         if (charMapA[char] !== charMapB[char]){
+   //             return false;
+   //         }
+   //     }
+   //     return true;
+   // }
+       
+   
+   // function charMapCreator(str){
+   //     let charMap = {};
+   //     for (let char of str.replace(/[^\w]/g,'').toLowerCase()){
+   //         if (charMap[char]){
+   //             charMap[char]++;
+   //          } else {
+   //              charMap[char] = 1;
+   //          }
+   //     }
+   
+   //     return charMap;
+   // }
